@@ -15,7 +15,7 @@ class ApiController < ApplicationController
     # raise
     respond_to do |format|
       format.html
-      format.json { render json: data.as_json}
+      format.json { render json: data}
     end
     # render json: data.as_json
   end
