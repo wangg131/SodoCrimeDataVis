@@ -11,8 +11,11 @@ $(document).ready(function() {
     dataType: 'json',
     success: function(data) {
       var geojson = data;
-      var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(map);
+      var myLayer = L.mapbox.featureLayer()
+        .setGeoJSON(geojson)
+        .addTo(map);
     }
   });
+  
   $( "div.leaflet-popup-content" ).scrollTop( 300 )
 });
