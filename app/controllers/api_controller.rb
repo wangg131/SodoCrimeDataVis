@@ -53,7 +53,25 @@ class ApiController < ApplicationController
                 data["latitude"]
               ]
             },
-            "properties": {}
+            "properties": {
+              "description": "<div class=\"marker-title\">#{data["event_clearance_description"]}</div>
+                <p>Event Clearance Code:  #{data["event_clearance_code"]}</p>
+                <p>CAD Event Number:  #{data["cad_event_number"]}</p>
+                <p>Event Clearance Subgroup:  #{data["event_clearance_subgroup"]}</p>
+                <p>Event Clearance Group:  #{data["event_clearance_group"]}</p>
+                <p>CAD CWD ID:  #{data["cad_cdw_id"]}</p>
+                <p>District Sector:  #{data["district_sector"]}</p>
+                <p>Hundred Block Location:  #{data["hundred_block_location"]}</p>
+                <p>General Offense Number:  #{data["general_offense_number"]}</p>
+                <p>Incident Location:  #{data["latitude"]}, #{data["longitude"]}</p>
+                <p>Cencus Tract:  #{data["census_tract"]}</p>
+                <p>Initial Type Description:  #{data["initial_type_description"]}</p>
+                <p>Initial Type Subgroup:  #{data["initial_type_subgroup"]}</p>
+                <p>Initial Type Group:  #{data["initial_type_group"]}</p>
+                <p>At Scene Time:  #{data["at_scene_time"]}</p>
+                <p>Incident Location Address:</p>
+                <p>#{data["incident_location_address"]} #{data["incident_location_city"]} #{data["incident_location_state"]} #{data["incident_location_zip"]}</p>"
+            }
           }
         ]
       }
