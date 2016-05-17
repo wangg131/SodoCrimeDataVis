@@ -1,17 +1,27 @@
 // Place all the styles related to the api controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1, h2, h3 {
+  text-align: center;
+}
+
+body, table {
+  margin: 0 auto;
+  max-width: 600px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
 #map {
-        width: 600px;
+        max-width: 600px;
         height: 600px;
     }
 
 .leaflet-popup-content {
-  font: 12px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font: 12px 'Helvetica Neue', Helvetica, sans-serif;
   background: none repeat scroll 0 0;
   margin: 5px;
   padding: 5px;
-  width: 200px;
+  max-width: 200px;
   height: 300px;
   overflow: auto;
 }
