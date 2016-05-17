@@ -8,6 +8,8 @@ class ApiController < ApplicationController
       response = HTTParty.get(SEA_CRIME_URI, :headers => headers, :query => query)
       # response = top_five_events(response)
       data = geojson(top_five_events(response))
+      @top_events_hash
+      # raise
       # data = top_five_events(response)
     # rescue
     #   data = {}
@@ -23,14 +25,14 @@ class ApiController < ApplicationController
   private
 
   def top_five_events(response)
-    top_events_hash = Hash.new(0)
+    @top_events_hash = Hash.new(0)
     top_events_array = []
     response.each do |event|
       group_name = event["event_clearance_group"]
-      top_events_hash[group_name] += 1
+      @top_events_hash[group_name] += 1
     end
-    top_events_hash = top_events_hash.max(5) {|a,b| a[1] <=> b[1]}.to_h
-    top_events_hash.each_key do |key|
+    @top_events_hash = @top_events_hash.max(5) {|a,b| a[1] <=> b[1]}.to_h
+    @top_events_hash.each_key do |key|
       top_events_array << response.select { |h| h["event_clearance_group"] == key}
     end
     # geojson(top_events_array)

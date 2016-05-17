@@ -1,2 +1,19 @@
-<!-- <%= @data %> -->
+<div>
+  <h1>Crimes Near WAMU Theater</h1>
+</div>
 <div id='map'></div>
+<div>
+  <h3>Most Frequent Crime Events</h3>
+</div>
+<table class="table">
+  <tr>
+    <th>Event Group Name</th>
+    <th>No. of Occurrences</th>
+  </tr>
+  <tr>
+    <% @top_events_hash.each do |event_group, value| %>
+      <td><%=  event_group %></td>
+      <td><%=  value %></td>
+  </tr>
+  <% end  %>
+</table>
