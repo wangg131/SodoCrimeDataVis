@@ -14,4 +14,5 @@ $(document).ready(function() {
       var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(map);
     }
   });
+  $( "div.leaflet-popup-content" ).scrollTop( 300 )
 });

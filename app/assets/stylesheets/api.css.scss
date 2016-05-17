@@ -5,3 +5,13 @@
         width: 600px;
         height: 600px;
     }
+
+.leaflet-popup-content {
+  font: 12px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  background: none repeat scroll 0 0;
+  margin: 5px;
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+  overflow: auto;
+}
