@@ -1,21 +1,21 @@
 <div id="container">
-  <div id="help-panel">
-    <h1 class="page-header-content">Centurylink Crime Blotter</h1>
+  <h1 class="page-header">Centurylink Crime Blotter</h1>
 
-    <div id='map'></div>
+  <div id='map'></div>
 
-    <h3 class="table-title">Most Frequent Crime Events</h3>
-    <table class="table">
-      <tr>
-        <th class="event-group-name">Event Group Name</th>
-        <th class="frequency">No. of Occurrences</th>
-      </tr>
-      <tr>
-        <% @top_events_hash.each do |event_group, value| %>
-          <td class="event-group-name"><%=  event_group %></td>
-          <td><%=  value %></td>
-      </tr>
-        <% end  %>
-    </table>
-  </div>
+  <table class="table">
+    <tr>
+      <th colspan="2"><h3 class="table-title">Most Frequent Crime Events</h3></th>
+    </tr>
+    <tr>
+      <th class="event-group-name">Event Group Name</th>
+      <th class="frequency">No. of Occurrences</th>
+    </tr>
+    <tr>
+      <% @top_events_hash.each do |event_group, value| %>
+        <td class="event-group-name"><%=  event_group %></td>
+        <td><%=  value %></td>
+    </tr>
+      <% end  %>
+  </table>
 </div>
