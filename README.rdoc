@@ -1,28 +1,6 @@
-== README
+== Crime Data Around CenturyLink Field
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Use Mapbox.js & the Seattle Crime dataset and api to mark points within 1 mile from CenturyLink Field
+  * display all data related to the top 5 events (Dataset column: Event Clearance Group)
+  * create a table listing the top 5 events (Dataset column: Event Clearance Group) and any relevant data you would like to display.
+  * responsive for mobile
