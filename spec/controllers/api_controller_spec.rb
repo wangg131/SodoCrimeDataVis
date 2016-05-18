@@ -12,5 +12,4 @@ require 'rails_helper'
         expect(response).to be_ok
       end
     end
-
 end
