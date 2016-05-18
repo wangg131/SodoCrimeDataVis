@@ -1,10 +1,8 @@
 == Crime Data Around CenturyLink Field
 
-Use Mapbox.js & the Seattle Crime dataset and api (https://data.seattle.gov/Public-Safety/Seattle-Police-Department-911-Incident-Res
-ponse/3k2p-39jp)
+Use Mapbox.js, and the Seattle Crime dataset (https://data.seattle.gov/resource/3k2p-39jp.json) & API (https://data.seattle.gov/resource/3k2p-39jp.json)
   * Mark all points within 1 mile radius of CenturyLink Field that have one of the top 5 most frequent Event Clearance Groups
   * Display all data related to the top 5 events (Dataset column: Event Clearance Group) in each marker
-    * https://data.seattle.gov/resource/3k2p-39jp.json)
   * Create a table listing the top 5 events (Dataset column: Event Clearance Group)
   * Responsive for mobile
 
